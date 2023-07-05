@@ -7,7 +7,7 @@ function App() {
 
   const [characters, setCharacters] = useState([]);
 
-  function getCharacters() {
+  function getCharacters(pageNumber=1) {
     const res = fetch("https://rickandmortyapi.com/api/character/?page=19")
       .then(response => response.json())
       .then(({ results, info }) => { return { results } })
@@ -16,12 +16,18 @@ function App() {
     //console.log(res);
   }
 
-  async function consoleCharacters(pageNumber = 1) {
-    const resp = await getCharacters();
+  async function consoleCharacters() {
+    /*const resp = await getCharacters();
     //console.log(resp);
-    setCharacters(resp);
+    setCharacters(resp);*/
+    const resp = await getCharacters(); // Esperar a que se resuelva la promesa
+  if (resp.results) {
+    setCharacters(resp.results);
+  } else {
+    setCharacters([]);
   }
-  consoleCharacters();
+  }
+  //consoleCharacters();
   //getCharacters();
 
   useEffect(() => {
@@ -31,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <header className='Header'>
-        <img className='Logo' src="/logo.jpg" alt="" />
+        <img className='Logo' src="/logo.png" alt="" />
         <h1 className='Terms'>Terms + Conditions</h1>
       </header>
       <div className='Hero'>

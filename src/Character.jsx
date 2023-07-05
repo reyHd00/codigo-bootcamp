@@ -5,7 +5,7 @@ export function Characters({ character }) {
         return null;
       }
     return (
-        <div className="card">
+        <div className='card'>
             <h1>{character.name}</h1>
             <img src={character.image} alt="" />
             <div className="card-description">
