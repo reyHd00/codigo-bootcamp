@@ -42,9 +42,9 @@ function App() {
       </header>
       <div className='Hero'>
         <h1>Rick and Morty</h1>
-        <h1>See all the caracteres.
+        <h2>See all the caracteres.
           And more.
-        </h1>
+        </h2>
         <Characters />
       </div>
       <main>
