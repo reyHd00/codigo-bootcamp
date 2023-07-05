@@ -1,20 +1,23 @@
-.Header{
+.Header {
   display: flex;
   width: 100%;
-  padding: 10px 10px;
+  padding: 10px 0px;
   background-color: #252525;
   align-items: center;
   justify-content: space-around;
 }
-.Logo{
-  width: 80%;
-height: 80%;
+
+.Logo {
+  width: 80px;
+  height: 80px;
 }
-.Terms{
+
+.Terms {
   color: white;
   font-size: 24px;
 }
-.Hero{
+
+.Hero {
   background-image: url("/public/wallpaper.jpg");
   width: 100px;
   height: 400px;
@@ -22,28 +25,35 @@ height: 80%;
   background-size: cover;
   background-position: center;
 }
-.card{
+
+.card {
   background-color: rgba(53, 153, 153, 0.4);
-  display: flex;
+  /*display: flex;*/
   border-radius: 5px;
   width: 220px;
   height: 500px;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* flex-direction: column; */
 }
-.card h1{
+
+.card h1 {
   color: white;
   background-color: #252525;
   font-size: 14px;
   text-align: center;
 }
-.card-description{
+
+.card-description {
   width: 100%;
   color: white;
   font-size: 18px;
   padding: 10px 5px;
 
 }
-.card-button{
+
+.card-button {
   margin-top: auto;
   color: white;
   background-color: #71ea00;
@@ -52,6 +62,7 @@ height: 80%;
   padding: 5px 10px;
 
 }
-.card-button:hover{
+
+.card-button:hover {
   box-shadow: 0px;
 }
