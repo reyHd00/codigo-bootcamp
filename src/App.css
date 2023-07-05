@@ -1,0 +1,57 @@
+.Header{
+  display: flex;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: #252525;
+  align-items: center;
+  justify-content: space-around;
+}
+.Logo{
+  width: 80%;
+height: 80%;
+}
+.Terms{
+  color: white;
+  font-size: 24px;
+}
+.Hero{
+  background-image: url("/public/wallpaper.jpg");
+  width: 100px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card{
+  background-color: rgba(53, 153, 153, 0.4);
+  display: flex;
+  border-radius: 5px;
+  width: 220px;
+  height: 500px;
+  flex-direction: column;
+}
+.card h1{
+  color: white;
+  background-color: #252525;
+  font-size: 14px;
+  text-align: center;
+}
+.card-description{
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  padding: 10px 5px;
+
+}
+.card-button{
+  margin-top: auto;
+  color: white;
+  background-color: #71ea00;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+
+}
+.card-button:hover{
+  box-shadow: 0px;
+}
