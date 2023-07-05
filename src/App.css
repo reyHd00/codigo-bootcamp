@@ -7,6 +7,10 @@
   justify-content: space-around;
 }
 
+body {
+  background-color: #252525;
+}
+
 .Logo {
   width: 80px;
   height: 80px;
@@ -19,21 +23,55 @@
 
 .Hero {
   background-image: url("/public/wallpaper.jpg");
-  width: 100px;
-  height: 400px;
+  /*width: 100px;
+  height: 400px;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Hero h1 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.Hero h2 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+main h1 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*Centra los elementos */
 }
 
 .card {
   background-color: rgba(53, 153, 153, 0.4);
   /*display: flex;*/
   border-radius: 5px;
-  width: 220px;
-  height: 500px;
+  /*width: 220px;
+  height: 500px;*/
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   /* flex-direction: column; */
 }
